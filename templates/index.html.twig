@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-
+<main>
     <header>
         <div class="container">
             <div class="row">
@@ -15,11 +15,6 @@
                             <li><a class="scroll" href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <!-- <nav class="col-md-6 header__top--responsive hidden-lg-up">
-                        <ul>
-                            <li><a class="menu-bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </nav> -->
                 </div>
             </div>
             
@@ -50,6 +45,9 @@
             <p>I love <strong>designing</strong> and <strong>developing</strong> modern and responsive website.</p>
             <p>Aside from development, I like sport, nature and healthy food.</p>
         </div>
+                    <div class="header__arrow">
+                <a class="scroll" href="#skills"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            </div>
     </section>
     
     <section id="skills">
@@ -97,6 +95,9 @@
                 </div>
             </div>
         </div>
+                    <div class="header__arrow">
+                <a class="scroll" href="#portfolio"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            </div>
     </section>
     
     <section id="portfolio">
@@ -169,7 +170,7 @@
             </div>
         </div>
     </section>
-    
+  </main>  
     <section id="contact">
         <div class="container">
             <p class="lead">Do you like what you see ?</p>
