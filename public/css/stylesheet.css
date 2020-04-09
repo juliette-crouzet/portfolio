@@ -1,3 +1,7 @@
+/* ---------------------------------------------------
+-----------------------GENERAL SETTINGS--------------- 
+-----------------------------------------------------*/
+
 html {
   --theme-color-first: #070D42;
   --theme-color-second: #FFBB33;
@@ -24,6 +28,7 @@ div {
 
 .jc {
   overflow: hidden;
+  color: #d50082;
 }
 
 #app {
@@ -31,16 +36,102 @@ div {
   height: 100%;
 }
 
+/* ---------------------------------------------------
+-----------------------BURGER MENU-------------------- 
+-----------------------------------------------------*/
+
 #burger {
     position: fixed;
     z-index: 7000;
-}
-
-@media (max-width: 1500px) and (min-width: 1201px) {
-  #burger {
     top: 30px;
     right: 30px;
     width: 60px;
     height: 60px;
-  }
 }
+
+.burger-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate3d(-100%,0,0);
+}
+
+.burger-line-wrap {
+  position: absolute;
+  height: 1px;
+  border: 1px solid #d50082;
+  left: 21px;
+  width: 18px;
+}
+
+.burger-line-wrap-0 {
+  top: 26px;
+}
+.burger-line-wrap-1 {
+  top: 30px;
+}
+.burger-line-wrap-2 {
+  top: 34px;
+}
+
+.burger-close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transform: translate3d(0,-108%,0);
+}
+
+.burger-close-wrap {
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  border: 1px solid #d50082;
+  top: 23px;
+  left: 30px;
+}
+
+#burger-close-wrap-0 {
+  transform: rotate(45deg);
+}
+
+#burger-close-wrap-1 {
+  transform: rotate(-45deg);
+}
+
+.burger-border {
+  box-sizing: border-box;
+  position: absolute;
+}
+
+#burger-border-wrap {
+  opacity: 0.5;
+}
+
+#burger-border-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ff3000;
+}
+
+#burger-border-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #d50082;
+}
+
+/* ---------------------------------------------------
+-----------------------RESPONSIVE--------------------- 
+-----------------------------------------------------*/
+
+/*@media (max-width: px) and (min-width: px) {}*/
+
+/* ----------BURGER MENU--------- */
