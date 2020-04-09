@@ -10,16 +10,19 @@
 
 		<meta name="robots" content="all">
 
-		<title>{% block title %}Juliette Crouzet - Web Developer - Digital Designer{% endblock %}</title>
+		<title>
+			{% block title %}Juliette Crouzet - Web Developer - Digital Designer
+			{% endblock %}
+		</title>
 		<meta name="description" content="Portfolio of Juliette Crouzet, Digital Developer/Designer in Haute-Loire/France. A French with a past in Art History and Heritage preservation.">
-        <meta name="keywords" content="Juliette Crouzet, Semichon, Developer, Digital Designer, France, French, Advertising, Graphic Designer, Design, Art Director, Webbdesigner, Grafisk Designer, Photoshop, UI, Media, Interactive, Interaction, Creative, User Experience, Illustration, Visual, Online, Experience, Application, Mobile, Marketing, Portfolio, Freelance">
+		<meta name="keywords" content="Juliette Crouzet, Semichon, Developer, Digital Designer, France, French, Advertising, Graphic Designer, Design, Art Director, Webbdesigner, Grafisk Designer, Photoshop, UI, Media, Interactive, Interaction, Creative, User Experience, Illustration, Visual, Online, Experience, Application, Mobile, Marketing, Portfolio, Freelance">
 
-        <meta property="og:type" content="website">
-        <!-- url complète du site -->
-        <meta property="og:url" content="">
-        <meta property="og:title" content="Juliette Crouzet - Web Developer - Digital Designer">
-        <meta property="og:description" content="Portfolio of Juliette Crouzet, Digital Developer/Designer in Haute-Loire/France. A French with a past in Art History and Heritage preservation.">
-
+		<meta
+		property="og:type" content="website">
+		<!-- url complète du site -->
+		<meta property="og:url" content="">
+		<meta property="og:title" content="Juliette Crouzet - Web Developer - Digital Designer">
+		<meta property="og:description" content="Portfolio of Juliette Crouzet, Digital Developer/Designer in Haute-Loire/France. A French with a past in Art History and Heritage preservation.">
 
 
 		{% block stylesheets %}
@@ -31,13 +34,19 @@
 
 	<body>
 		{% block header %}
-		{{ include('default/_header.html.twig') }}
+			{{ include('default/_header.html.twig') }}
 		{% endblock %}
-		{% block body %}{% endblock %}
+
+		{% block body %}
+			{{ include('default/_leftside.html.twig') }}
+		{% endblock %}
+
 		{% block footer %}
-		{{ include('default/_footer.html.twig') }}
+			{{ include('default/_footer.html.twig') }}
 		{% endblock %}
-		{% block javascripts %}{% endblock %}
+
+		{% block javascripts %}
+		{% endblock %}
 	</body>
-	
+
 </html>

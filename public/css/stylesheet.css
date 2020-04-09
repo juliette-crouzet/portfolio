@@ -14,9 +14,6 @@ html {
 }
 
 a, body, div, footer, form, h1, h2, h3, header, html, img, input, label, li, nav, p, select, span, table, textarea, ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
   line-height: 100%;
   font: inherit;
   font-size: 100%;
@@ -26,106 +23,54 @@ div {
   display: block;
 }
 
-.jc {
-  overflow: hidden;
-  color: #d50082;
-}
-
-#app {
-  width: 100%;
-  height: 100%;
-}
 
 /* ---------------------------------------------------
 -----------------------BURGER MENU-------------------- 
 -----------------------------------------------------*/
 
-#burger {
-    position: fixed;
-    z-index: 7000;
-    top: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-}
 
-.burger-line {
-  position: absolute;
-  top: 0;
+/* ---------------------------------------------------
+-----------------------LEFT SIDE---------------------- 
+-----------------------------------------------------*/
+
+.left-wrap {
+  list-style: none;
+  top: -6vh;
+  margin: 6vh;
+  width: 100vh;
+  font-size: calc(.42rem + .42vw);
+  transform-origin: top left;
+  transform: rotate(-90deg) translate3d(-100%,0,0);
+  position: fixed;
   left: 0;
-  right: 0;
-  bottom: 0;
-  transform: translate3d(-100%,0,0);
-}
-
-.burger-line-wrap {
-  position: absolute;
-  height: 1px;
-  border: 1px solid #d50082;
-  left: 21px;
-  width: 18px;
-}
-
-.burger-line-wrap-0 {
-  top: 26px;
-}
-.burger-line-wrap-1 {
-  top: 30px;
-}
-.burger-line-wrap-2 {
-  top: 34px;
-}
-
-.burger-close {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  transform: translate3d(0,-108%,0);
-}
-
-.burger-close-wrap {
-  position: absolute;
-  width: 1px;
-  height: 15px;
-  border: 1px solid #d50082;
-  top: 23px;
-  left: 30px;
-}
-
-#burger-close-wrap-0 {
-  transform: rotate(45deg);
-}
-
-#burger-close-wrap-1 {
-  transform: rotate(-45deg);
-}
-
-.burger-border {
+  color: var(--theme-color-first);
+  letter-spacing: 2px;
   box-sizing: border-box;
+}
+
+.left-wrap-left {
   position: absolute;
-}
-
-#burger-border-wrap {
-  opacity: 0.5;
-}
-
-#burger-border-top {
   top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: #ff3000;
+  left: 6.5vh;
 }
 
-#burger-border-bottom {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: #d50082;
+.left-wrap-center {
+  text-align: center;
+}
+
+.left-wrap-right {
+  position: absolute;
+  top: 0;
+  right: 6.5vh;
+}
+
+
+/* ---------------------------------------------------
+-----------------------HOMEPAGE--------------------- 
+-----------------------------------------------------*/
+
+#container {
+  background-color: #070D42;
 }
 
 /* ---------------------------------------------------
