@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
+<html lang="fr, en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta
+		http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- Lien vers l'url complète du site -->
+		<link rel="canonical" href="">
 
-        <title>{% block title %}JulietteCrouzet{% endblock %}</title>
+		<meta name="robots" content="all">
 
-        {% block stylesheets %}
-        <link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
-        {% endblock %}
+		<title>{% block title %}Juliette Crouzet - Web Developer - Digital Designer{% endblock %}</title>
+		<meta name="description" content="Portfolio of Juliette Crouzet, Digital Developer/Designer in Haute-Loire/France. A French with a past in Art History and Heritage preservation.">
+        <meta name="keywords" content="Juliette Crouzet, Semichon, Developer, Digital Designer, France, French, Advertising, Graphic Designer, Design, Art Director, Webbdesigner, Grafisk Designer, Photoshop, UI, Media, Interactive, Interaction, Creative, User Experience, Illustration, Visual, Online, Experience, Application, Mobile, Marketing, Portfolio, Freelance">
 
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+        <meta property="og:type" content="website">
+        <!-- url complète du site -->
+        <meta property="og:url" content="">
+        <meta property="og:title" content="Juliette Crouzet - Web Developer - Digital Designer">
+        <meta property="og:description" content="Portfolio of Juliette Crouzet, Digital Developer/Designer in Haute-Loire/France. A French with a past in Art History and Heritage preservation.">
 
-        {% block javascripts %}
-        <script
-            defer
-            src="https://code.jquery.com/jquery-3.4.1.js" 
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            crossorigin="anonymous">
-        </script>
-        <script defer src="{{ asset('js/app.js') }}"></script>
-        <script defer src="https://kit.fontawesome.com/aa43d6d605.js" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        {% endblock %}
-    </body>
+
+
+		{% block stylesheets %}
+			<link href="{{ asset('css/stylesheet.css') }}" rel="stylesheet">
+			<link href="{{ asset('css/reset.css') }}" rel="stylesheet">
+		{% endblock %}
+
+	</head>
+	<body>
+
+		{% block header %}
+		{{ include('default/_header.html.twig') }}
+		{% endblock %}
+		{% block body %}{% endblock %}
+		{% block footer %}
+		{{ include('default/_footer.html.twig') }}
+		{% endblock %}
+		{% block javascripts %}{% endblock %}
+	</body>
 </html>
