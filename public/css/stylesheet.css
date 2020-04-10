@@ -2,75 +2,115 @@
 -----------------------GENERAL SETTINGS--------------- 
 -----------------------------------------------------*/
 
-html {
-  --theme-color-first: #070D42;
-  --theme-color-second: #FFBB33;
-  --theme-color-white: #FFFFFF;
-  --theme-color-black: #000000;
-  --theme-color-white-darken80: #333333;
-
-  --font-first: "Montserrat";
-  --font-bold-weight: 700;
+body {
+  width: 1200px;
+  height: 800px;
+  margin: 0 0;
+  background-color: white;
+  padding: 0px 0px 0px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  /*border: 0 0 0 3px solid rgba(0, 0, 0, 0.534);*/
+  
 }
 
-a, body, div, footer, form, h1, h2, h3, header, html, img, input, label, li, nav, p, select, span, table, textarea, ul {
-  line-height: 100%;
-  font: inherit;
-  font-size: 100%;
+div.container {
+  display: flex;
 }
-
-div {
-  display: block;
-}
-
-
-/* ---------------------------------------------------
------------------------BURGER MENU-------------------- 
------------------------------------------------------*/
 
 
 /* ---------------------------------------------------
 -----------------------LEFT SIDE---------------------- 
 -----------------------------------------------------*/
 
-.left-wrap {
-  list-style: none;
-  top: -6vh;
-  margin: 6vh;
-  width: 100vh;
-  font-size: calc(.42rem + .42vw);
-  transform-origin: top left;
-  transform: rotate(-90deg) translate3d(-100%,0,0);
+.left-container {
   position: fixed;
-  left: 0;
-  color: var(--theme-color-first);
-  letter-spacing: 2px;
-  box-sizing: border-box;
+  background-color: rgba(65, 65, 65, 0.432);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  color: black;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.left-wrap-left {
+.vertical-line {
+  width: 3px;
+  height: 100vh;
+  margin-left: 8%;
+  position: relative;
+  color: black;
+}
+
+.line {
   position: absolute;
-  top: 0;
-  left: 6.5vh;
+  width:100%;
+  height: 90vh; 
+  box-shadow: 0px 0px 3px 3px rgba(247, 177, 177, 0.5);
+  background-color: rgb(224, 46, 82);
 }
 
-.left-wrap-center {
-  text-align: center;
-}
-
-.left-wrap-right {
+.menu-items {
   position: absolute;
-  top: 0;
-  right: 6.5vh;
+  /*background-color: rgb(236, 236, 236);*/
+  align-content: center;
+  vertical-align: middle;
+  margin-top: 40%;
+  padding-left: 8%;
+  color: rgb(230, 39, 77);
+  font-weight: bold;
 }
+
+.item {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(224, 46, 82);
+}
+
+.item:hover {
+  color: rgb(167, 20, 50);
+}
+
+
 
 
 /* ---------------------------------------------------
------------------------HOMEPAGE--------------------- 
+-----------------------PAGES-------------------------- 
 -----------------------------------------------------*/
 
-#container {
-  background-color: #070D42;
+.right-container {
+  position: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  margin-left: 50%;
+}
+
+.contact-me {
+  margin-top: 2%;
+  margin-left: 70%;
+}
+
+.presentation {
+  margin-top: 40%;
+  margin-left: 3%;
+}
+
+p {
+  padding: 4px;
+}
+
+span {
+  font-weight: bold;
 }
 
 /* ---------------------------------------------------
@@ -79,4 +119,4 @@ div {
 
 /*@media (max-width: px) and (min-width: px) {}*/
 
-/* ----------BURGER MENU--------- */
+/* ----------MENU--------- */
