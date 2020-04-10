@@ -25,60 +25,62 @@ div.container {
 
 .left-container {
   position: fixed;
-  background-color: rgba(65, 65, 65, 0.432);
+  /*background-color: rgba(65, 65, 65, 0.432);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
   width: 50%;
   height: 100%;
-  color: black;
-  padding: 2em;
+  /*padding: 2em;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+img {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 .vertical-line {
-  width: 3px;
-  height: 100vh;
+  width: 2px;
   margin-left: 8%;
   position: relative;
   color: black;
 }
 
 .line {
-  position: absolute;
   width:100%;
-  height: 90vh; 
-  box-shadow: 0px 0px 3px 3px rgba(247, 177, 177, 0.5);
-  background-color: rgb(224, 46, 82);
+  height: 100vh; 
+  background-color: #d66911;
 }
 
 .menu-items {
-  position: absolute;
-  /*background-color: rgb(236, 236, 236);*/
-  align-content: center;
-  vertical-align: middle;
-  margin-top: 40%;
-  padding-left: 8%;
-  color: rgb(230, 39, 77);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   font-weight: bold;
 }
 
 .item {
-  vertical-align: middle;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
   text-decoration: none;
-  color: rgb(224, 46, 82);
+  color: #d66911;
+  background-color: #f1edeaaf;
+  padding: 0.8%;
+  margin-bottom: 10%;
 }
 
 .item:hover {
   color: rgb(167, 20, 50);
 }
-
-
 
 
 /* ---------------------------------------------------
@@ -96,8 +98,9 @@ div.container {
 }
 
 .contact-me {
+  position: fixed;
   margin-top: 2%;
-  margin-left: 70%;
+  margin-left: 10%;
 }
 
 .presentation {
@@ -107,6 +110,7 @@ div.container {
 
 p {
   padding: 4px;
+  font-size: 20px;
 }
 
 span {
@@ -117,6 +121,44 @@ span {
 -----------------------RESPONSIVE--------------------- 
 -----------------------------------------------------*/
 
-/*@media (max-width: px) and (min-width: px) {}*/
+@media screen and (min-width: 100px) {
 
 /* ----------MENU--------- */
+
+  .vertical-line {
+  }
+
+  .menu-items {
+    margin-top: 20%;
+    margin-left: 18%;
+  }
+
+  .item {
+    margin-top: 40%;
+    justify-content: space-around;
+    transform: rotate(-90deg);
+  }
+
+  .left-container {
+    background-color: lightgrey;
+    width: 20%;
+  }
+
+  img {
+    display: none;
+  }
+
+  .right-container {
+    margin-left: 20%;
+    background-image: url('./img/phare.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    padding: 0px;
+  }
+
+
+}
